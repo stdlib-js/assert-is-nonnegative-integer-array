@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isNonNegativeIntegerArray;
+})();
 })();
 </script>
 ```
@@ -126,6 +128,7 @@ bool = isNonNegativeIntegerArray.objects( [ 1.0, 0.0, 10.0 ] );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var bool = isNonNegativeIntegerArray( [ 5, 2, 3 ] );
 // returns true
@@ -145,6 +148,7 @@ bool = isNonNegativeIntegerArray( [ 2.3, 1, 3 ] );
 bool = isNonNegativeIntegerArray( [] );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -240,7 +244,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
