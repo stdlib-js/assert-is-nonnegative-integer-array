@@ -24,20 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only nonnegative integers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-nonnegative-integer-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
+var isNonNegativeIntegerArray = require( '@stdlib/assert-is-nonnegative-integer-array' );
 ```
 
 #### isNonNegativeIntegerArray( value )
@@ -47,7 +57,7 @@ Tests if a `value` is an array-like object containing **only** nonnegative `inte
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNonNegativeIntegerArray( [ 3.0, new Number(3.0) ] );
 // returns true
@@ -63,7 +73,7 @@ Tests if a `value` is an array-like object containing **only**  nonnegative prim
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNonNegativeIntegerArray.primitives( [ 1.0, 0.0, 10.0 ] );
 // returns true
@@ -79,7 +89,7 @@ Tests if a `value` is an array-like object containing **only**  nonnegative obje
 <!-- eslint-disable no-new-wrappers, max-len -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isNonNegativeIntegerArray.objects( [ new Number(3.0), new Number(1.0) ] );
 // returns true
@@ -100,14 +110,9 @@ bool = isNonNegativeIntegerArray.objects( [ 1.0, 0.0, 10.0 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isNonNegativeIntegerArray = require( '@stdlib/assert-is-nonnegative-integer-array' );
 
 var bool = isNonNegativeIntegerArray( [ 5, 2, 3 ] );
 // returns true
@@ -126,10 +131,6 @@ bool = isNonNegativeIntegerArray( [ 2.3, 1, 3 ] );
 
 bool = isNonNegativeIntegerArray( [] );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -159,7 +160,7 @@ bool = isNonNegativeIntegerArray( [] );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -189,8 +190,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-nonnegative-integer-array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-nonnegative-integer-array
 
-[test-image]: https://github.com/stdlib-js/assert-is-nonnegative-integer-array/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/assert-is-nonnegative-integer-array/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/assert-is-nonnegative-integer-array/actions/workflows/test.yml/badge.svg?branch=v0.0.8
+[test-url]: https://github.com/stdlib-js/assert-is-nonnegative-integer-array/actions/workflows/test.yml?query=branch:v0.0.8
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-nonnegative-integer-array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-nonnegative-integer-array?branch=main
@@ -221,7 +222,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/esm
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
 <!-- </related-links> -->
 
