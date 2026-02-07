@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nonnegative-integer-array/tags). For example,
+
+```javascript
 import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@v0.2.3-esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
 ```
 
 #### isNonNegativeIntegerArray( value )
@@ -118,7 +123,7 @@ bool = isNonNegativeIntegerArray.objects( [ 1.0, 0.0, 10.0 ] );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@v0.2.3-esm/index.mjs';
+import isNonNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer-array@esm/index.mjs';
 
 var bool = isNonNegativeIntegerArray( [ 5, 2, 3 ] );
 // returns true
